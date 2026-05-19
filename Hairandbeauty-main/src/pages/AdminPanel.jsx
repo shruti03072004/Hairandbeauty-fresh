@@ -30,7 +30,7 @@ const AdminPanel = () => {
       setError("")
 
       const res = await fetch(
-        `http://localhost:8080/api/admin/appointments?sort=${sortBy}`,
+        `https://hairandbeauty-fresh-production.up.railway.app/api/admin/appointments?sort=${sortBy}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

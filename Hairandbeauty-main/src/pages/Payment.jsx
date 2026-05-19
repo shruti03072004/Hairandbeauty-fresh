@@ -99,7 +99,7 @@ const Payment = () => {
 
   const verifyPayment = async (razorpayResponse) => {
     try {
-      const verifyResponse = await fetch('http://localhost:8080/api/payment/verify', {
+      const verifyResponse = await fetch('https://hairandbeauty-fresh-production.up.railway.app/api/payment/verify', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
