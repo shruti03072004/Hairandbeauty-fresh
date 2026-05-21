@@ -46,7 +46,7 @@ const Payment = () => {
       const amount = servicePricing[appointment.service]
       
       // Step 1: Create order
-      const orderResponse = await fetch('http://localhost:8080/api/payment/create-order', {
+      const orderResponse = await fetch('https://hairandbeauty-fresh-production.up.railway.app/api/payment/create-order', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

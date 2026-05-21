@@ -64,7 +64,7 @@ const AdminPanel = () => {
       params.append("sort", sortBy)
 
       const res = await fetch(
-        `http://localhost:8080/api/admin/appointments/filter?${params}`,
+        `https://hairandbeauty-fresh-production.up.railway.app/apiadmin/appointments/filter?${params}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -89,7 +89,7 @@ const AdminPanel = () => {
   const updateStatus = async (id, status) => {
     try {
       await fetch(
-        `http://localhost:8080/api/admin/appointments/${id}/status?status=${status}`,
+        `https://hairandbeauty-fresh-production.up.railway.app/api/admin/appointments/${id}/status?status=${status}`,
         {
           method: "PUT",
           headers: {
