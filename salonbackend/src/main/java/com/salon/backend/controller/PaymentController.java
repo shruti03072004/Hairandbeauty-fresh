@@ -17,8 +17,10 @@ import java.util.*;
 
 @RestController
 @RequestMapping("/api/payment")
-@CrossOrigin(origins = "http://localhost:5173")
-public class PaymentController {
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "https://hairandbeauty-fresh.vercel.app"
+})public class PaymentController {
 
     @Value("${razorpay.key.id}")
     private String keyId;
